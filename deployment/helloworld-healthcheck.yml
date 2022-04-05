@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-deployment
+  name: helloworld-deployment-health-check
 spec:
   replicas: 3
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: k8s-demo
-        image: wardviaene/k8s-demo
+        image: odinxux/udemy_k8s:nodedemo
         ports:
         - name: nodejs-port
           containerPort: 3000

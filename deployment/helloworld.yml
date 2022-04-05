@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: k8s-demo
-        image: wardviaene/k8s-demo
+        image: odinxux/udemy_k8s:nodedemo
         ports:
         - name: nodejs-port
           containerPort: 3000
